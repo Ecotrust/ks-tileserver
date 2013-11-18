@@ -29,15 +29,8 @@ vagrant-webmaps handles the following:
 
 ### Deploying to a "real" server
 If you're not using VirtualBox VMs for a real-world deployment (you're not, right?) then you miss out on a lot
-of the fancy handwaving that vagrant provides. Instead, the process needs a bit more hand-holding
-
-* Install the OS and ssh in
-* Configure users
-* Install puppet and git
-* Clone this repo
-* run `puppet apply puppet/manifests/app.pp` ( may need to specify template and file dirs? )
-* ???
-* profit
+of the fancy handwaving that vagrant provides. Instead, the process needs a bit more hand-holding, 
+follow the [deploy instructions](https://github.com/Ecotrust/ks-tileserver/wiki/Deploy-Tileserver) on the wiki.
 
 ### URLs
 
