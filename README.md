@@ -1,6 +1,6 @@
 # vagrant-webmaps
 
-### Automated deployment of a full-featured tile server and editing environment
+### Automated dev environment wtih a full-featured tile server and editing environment
 
 First, you've got to install the Pre-requisites: Vagrant, VirtualBox. 
 Optionally, you might want git, python, fabric.
@@ -26,6 +26,18 @@ vagrant-webmaps handles the following:
 * Caches them with TileStache and Redis
 * Renders them with Mapnik
 * Allows you to view the maps in a web browser with the OpenLayers-based Madrona layer manager.
+
+### Deploying to a "real" server
+If you're not using VirtualBox VMs for a real-world deployment (you're not, right?) then you miss out on a lot
+of the fancy handwaving that vagrant provides. Instead, the process needs a bit more hand-holding
+
+* Install the OS and ssh in
+* Configure users
+* Install puppet and git
+* Clone this repo
+* run `puppet apply puppet/manifests/app.pp` ( may need to specify template and file dirs? )
+* ???
+* profit
 
 ### URLs
 
