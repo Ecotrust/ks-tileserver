@@ -1,2 +1,2 @@
 redis
--e git://github.com/migurski/TileStache.git#egg=TileStache
+-e git://github.com/perrygeo/TileStache.git#egg=TileStache
